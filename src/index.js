@@ -31,7 +31,7 @@ let city;
 const getJSON = async (questionUpload) => {
     try {
         const question = questionUpload;
-        const res = await fetch('http://localhost:3080/', {
+        const res = await fetch('https://chatgpt-v2.onrender.com', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
