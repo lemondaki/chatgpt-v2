@@ -7,8 +7,9 @@ const port = 3080;
 const cors = require('cors'); 
 app.use(cors());
 app.use(express.json());
+const API_ENDPOINT = 'https://api.openai.com/v1/chat/completions';
 const fecthData = async function (prompt) {
-	const res = await fetch(process.env.API_ENDPOINT, { 
+	const res = await fetch(API_ENDPOINT, { 
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json",
