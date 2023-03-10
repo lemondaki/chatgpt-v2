@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatGPT v2</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/logo.jpeg" />
+    <script src="all.min.js"></script>
+    <script src="moment.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="app">
+    <div id="main">
+      <div class="weather__container">
+        <div class="main-section">
+          <div class="search-bar">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" name="search-city" id="search-input" placeholder="Seacrh the city..." />
+            <span class="microphone">
+              <i class="fas fa-microphone"></i>
+              <span class="recording-icon"></span>
+            </span>
+            <span class="languague">VN</span>
+          </div>
+          <div class="info-wrapper">
+            <p class="city-name">--</p>
+            <p class="weather-state">--</p>
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="weather-icon" />
+            <p class="temperature">--</p>
+          </div>
+        </div>
+        <div class="additional-section">
+          <div class="row">
+            <div class="item">
+              <div class="label">Sunrise</div>
+              <div class="value sunrise">--</div>
+            </div>
+            <div class="item">
+              <div class="label">Sundown</div>
+              <div class="value sunset">--</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="item">
+              <div class="label">Humidity</div>
+              <div class="value"><span class="humidity">--</span>%</div>
+            </div>
+            <div class="item">
+              <div class="label">Wind</div>
+              <div class="value"><span class="wind-speed">--</span> km/h</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chatbox__conatainer">
+        <div class="formAnswer">
+          <div class="heading">
+            <h3 class="title">ASKING QUESTION</h3>
+          </div>
+            <iframe class="frameVideo hidden" width="380" height="200" src="https://www.youtube.com/embed/IOe0tNoUGv8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <div class="logo">
+            <img class="logo__img" src="./img/logo.jpeg" alt="" />
+          </div>
+          <p class="question"></p>
+          <p class="answer"></p>
+        </div>
+      </div>
+    </div>
+    <div class="form">
+          <div class="formInput">
+          <input class="inputField" type="text" placeholder="Type your questions..." />
+          <button class="clear">
+            <i class="fas fa-trash"></i>
+          </button>
+          <button class="btn-send">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+          </div>
+    </div>
+    </div>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
