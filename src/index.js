@@ -162,7 +162,7 @@ const handleVoice = (text) => {
         return;
     }
 
-    else if (handledText.includes('xin chào') || handledText.includes('alexa')) {
+    else if (handledText.includes('xin chào') || handledText.includes('hello')) {
         if (shortLange === 'vi') {
             speak('chào bạn, tôi là một trợ lý ảo, tôi có thể làm gì cho bạn');
         } else {
