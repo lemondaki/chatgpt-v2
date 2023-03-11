@@ -53,6 +53,8 @@ recognition.continuous = false;
 recognition.lang = 'vi-VN';
 let shortLange = 'vi';
 let isSwitch = false;
+let voices = synth.getVoices();
+console.log(voices);
 languague.addEventListener('click', function () {
     if (isSwitch) {
         this.innerText = 'VN';
@@ -284,3 +286,4 @@ clear.addEventListener('click', function () {
         synth.cancel();
         recognition.abort();
 });
+
